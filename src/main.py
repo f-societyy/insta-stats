@@ -31,6 +31,7 @@ def logIn(uid, pwd):
     driver.find_element_by_xpath('//button[@type="submit"]').click()
     driver.implicitly_wait(5)
     driver.find_element_by_xpath('//button[text()="Not Now"]').click()
+    driver.find_element_by_xpath('//button[text()="Cancel"]').click()
 
 
 def main():
