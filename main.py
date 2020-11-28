@@ -20,8 +20,9 @@ def getCred():
 
 def logIn(uid, pwd):
     driver.get("https://www.instagram.com/")
-    user_id = driver.find_element_by_xpath('')
-    user_pwd = driver.find_element_by_xpath('')
+    driver.find_element_by_xpath('//button[@class="sqdOP  L3NKy   y3zKF     "]').click()
+    user_id = driver.find_element_by_xpath('//input[@name="username"]')
+    user_pwd = driver.find_element_by_xpath('//input[@name="password"]')
     user_id.send_keys(uid)
     user_pwd.send_keys(pwd)
 
