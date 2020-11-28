@@ -11,7 +11,7 @@ driver = webdriver.Chrome(executable_path=r"C:\chromedriver_win32\chromedriver.e
 
 
 def getCred():
-    with open('credentials.txt', 'r') as cred:
+    with open('../credentials.txt', 'r') as cred:
         uid = cred.readline()
         pwd = cred.readline()
 
